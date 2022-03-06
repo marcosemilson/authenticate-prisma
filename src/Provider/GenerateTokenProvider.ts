@@ -5,7 +5,7 @@ class GenerateTokenProvider{
         //Gerar Token do usuario
     const token = sign({}, "greenhouse", {
         subject: userId,
-        expiresIn: "20s"
+        expiresIn: "30m"
       });
       return token;
     }
